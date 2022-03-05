@@ -15,8 +15,8 @@ axios(url)
             const url = $(this).find('a').attr('href')
             articles.push({
                 title, url
-            })
-            console.log(articles)     
-        }).catch(err => console.log(err))
-    })
+            })     
+        })
+        console.log(articles) 
+    }).catch(err => console.log(err))
 a.listen(PORT, () => console.log(`server is running on ${PORT}`))
